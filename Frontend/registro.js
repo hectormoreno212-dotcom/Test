@@ -40,7 +40,7 @@ const API_LOGIN = `${BASE_URL}/login`;
 
     if (response.ok) {
     alert("✅ Usuario guardado correctamente!");
-    window.location.replace("login.html");
+    window.location.replace("index.html");
     } else {
         alert("❌ Error al guardar usuario");
     }
@@ -51,4 +51,5 @@ const API_LOGIN = `${BASE_URL}/login`;
         alert("Error al registrar usuario");
     }
 });
+
 
