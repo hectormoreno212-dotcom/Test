@@ -39,16 +39,11 @@ const API_LOGIN = `${BASE_URL}/login`;
     });
 
     if (response.ok) {
-    alert("✅ Usuario guardado correctamente!");
+    alert("Usuario guardado con exito");
+    document.getElementById("registroForm").reset();
     window.location.replace("index.html");
     } else {
-        alert("❌ Error al guardar usuario");
-    }
-
-    if(response.ok){
-        document.getElementById("registroForm").reset();
-    } else{
-        alert("Error al registrar usuario");
+        alert("Error al guardar usuario");
     }
 });
 
